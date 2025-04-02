@@ -38,6 +38,7 @@ import {
   mainLogo
 } from './assets/images'
 import { ContentHeader } from './components/ContentHeader'
+import { ScrollArea } from './components/ScrollArea'
 import { Section } from './components/Section'
 
 const App = () => {
@@ -167,7 +168,7 @@ const App = () => {
               </ContentHeader>
             </Section.Header>
             <Section.Body>
-              <div className="scroll-area">
+              <ScrollArea>
                 <div className="game-list">
                   <div className="game-item" style={{ backgroundImage: `url(${game100hpGaming})` }}>
                     <span className="game-label">
@@ -227,7 +228,7 @@ const App = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </ScrollArea>
             </Section.Body>
           </Section>
 
@@ -242,7 +243,7 @@ const App = () => {
               </ContentHeader>
             </Section.Header>
             <Section.Body>
-              <div className="scroll-area">
+              <ScrollArea>
                 <div className="provider-container">
                   <div className="provider-list">
                     <div className="provider-item">
@@ -326,7 +327,7 @@ const App = () => {
                     </div>
                   </div>
                 </div>
-              </div>
+              </ScrollArea>
             </Section.Body>
           </Section>
         </div>
