@@ -17,18 +17,11 @@ import {
   icoTelegram,
   icoTwitter,
   icoVip,
-  logo100hpGaming,
-  logoBgaming,
-  logoEvolution,
-  logoSmartsoft,
-  logoSpribe,
-  logoTurboGame,
-  logoVeliplay,
-  logoWazdan,
   mainLogo
 } from './assets/images'
 import { ContentHeader } from './components/ContentHeader'
 import { GameList } from './components/GameList'
+import { ProviderList } from './components/ProviderList'
 import { ScrollArea } from './components/ScrollArea'
 import { Section } from './components/Section'
 
@@ -177,89 +170,7 @@ const App = () => {
             </Section.Header>
             <Section.Body>
               <ScrollArea>
-                <div className="provider-container">
-                  <div className="provider-list">
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logoEvolution} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">Evolution</p>
-                        <p className="provider-games-amount">312 games</p>
-                      </div>
-                    </div>
-
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logoSpribe} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">Spribe</p>
-                        <p className="provider-games-amount">12 games</p>
-                      </div>
-                    </div>
-
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logoVeliplay} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">VeliPlay</p>
-                        <p className="provider-games-amount">9 games</p>
-                      </div>
-                    </div>
-
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logoTurboGame} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">Turbo Games</p>
-                        <p className="provider-games-amount">36 games</p>
-                      </div>
-                    </div>
-
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logoSmartsoft} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">SmartSoft</p>
-                        <p className="provider-games-amount">37 games</p>
-                      </div>
-                    </div>
-
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logo100hpGaming} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">100HP Gaming</p>
-                        <p className="provider-games-amount">7 games</p>
-                      </div>
-                    </div>
-
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logoBgaming} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">BGaming</p>
-                        <p className="provider-games-amount">166 games</p>
-                      </div>
-                    </div>
-
-                    <div className="provider-item">
-                      <div className="provider-logo">
-                        <img src={logoWazdan} />
-                      </div>
-                      <div className="provider-name-and-games-amount">
-                        <p className="provider-name">Wazdan</p>
-                        <p className="provider-games-amount">199 games</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <ProviderList />
               </ScrollArea>
             </Section.Body>
           </Section>
