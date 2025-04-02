@@ -15,6 +15,7 @@ import {
 import { Button } from './components/Button'
 import { CategoryList } from './components/CategoryList'
 import { ContentHeader } from './components/ContentHeader'
+import { FooterMenu } from './components/FooterMenu'
 import { GameList } from './components/GameList'
 import { Menu } from './components/Menu'
 import { ProviderList } from './components/ProviderList'
@@ -129,69 +130,69 @@ const App = () => {
                 </a>
               </div>
             </div>
-            <div className="footer-menu">
-              <h3 className="footer-menu-header">Games</h3>
-              <ul>
-                <li>
+            <FooterMenu>
+              <FooterMenu.Header>Games</FooterMenu.Header>
+              <FooterMenu.List>
+                <FooterMenu.Item>
                   <a href="#">Game 1</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Game 2</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Game 3</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Game 14</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-menu">
-              <h3 className="footer-menu-header">About</h3>
-              <ul>
-                <li>
+                </FooterMenu.Item>
+              </FooterMenu.List>
+            </FooterMenu>
+            <FooterMenu>
+              <FooterMenu.Header>About</FooterMenu.Header>
+              <FooterMenu.List>
+                <FooterMenu.Item>
                   <a href="#">About Us</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Promotion</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">VIP</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Help Center</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Awards & Certificates</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">App</a>
-                </li>
-              </ul>
-            </div>
-            <div className="footer-menu">
-              <h3 className="footer-menu-header">Legal Information</h3>
-              <ul>
-                <li>
+                </FooterMenu.Item>
+              </FooterMenu.List>
+            </FooterMenu>
+            <FooterMenu>
+              <FooterMenu.Header>Legal Information</FooterMenu.Header>
+              <FooterMenu.List>
+                <FooterMenu.Item>
                   <a href="#">General Terms & Conditions</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Responsible Game Policy</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Sports Betting Rule</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Privary and Cookies Policy</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Payment Methods</a>
-                </li>
-                <li>
+                </FooterMenu.Item>
+                <FooterMenu.Item>
                   <a href="#">Limits</a>
-                </li>
-              </ul>
-            </div>
+                </FooterMenu.Item>
+              </FooterMenu.List>
+            </FooterMenu>
             <div className="download-platforms">
               <a href="#" className="macos">
                 <img src={icoApple} />
