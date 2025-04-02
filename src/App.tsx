@@ -37,6 +37,7 @@ import {
   logoWazdan,
   mainLogo
 } from './assets/images'
+import { ContentHeader } from './components/ContentHeader'
 import { Section } from './components/Section'
 
 const App = () => {
@@ -157,13 +158,13 @@ const App = () => {
 
           <Section>
             <Section.Header>
-              <div className="content-header">
-                <div className="content-header-title">Exclusive Games</div>
-                <div className="content-header-action">
+              <ContentHeader>
+                <ContentHeader.Title>Exclusive Games</ContentHeader.Title>
+                <ContentHeader.Action>
                   See All
                   <img src={icoSeeAll} />
-                </div>
-              </div>
+                </ContentHeader.Action>
+              </ContentHeader>
             </Section.Header>
             <Section.Body>
               <div className="scroll-area">
@@ -232,13 +233,13 @@ const App = () => {
 
           <Section>
             <Section.Header>
-              <div className="content-header">
-                <div className="content-header-title">All Providers</div>
-                <div className="content-header-action">
+              <ContentHeader>
+                <ContentHeader.Title>All Providers</ContentHeader.Title>
+                <ContentHeader.Action>
                   See All
                   <img src={icoSeeAll} />
-                </div>
-              </div>
+                </ContentHeader.Action>
+              </ContentHeader>
             </Section.Header>
             <Section.Body>
               <div className="scroll-area">
