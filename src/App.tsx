@@ -1,24 +1,14 @@
 import {
   carousel1,
   carouselBg,
-  game100hpGaming,
-  gameEvolution,
-  gameOnlyplay,
-  gameVeliplay2,
-  gameVeliplay3,
-  gameVeliplay4,
-  gameVeliplay5,
-  gameVeliplay6,
   icoAndroid,
   icoApple,
   icoDiamond,
   icoFacebook,
   icoGames,
-  icoHot,
   icoHotMatch,
   icoInstagram,
   icoMenu,
-  icoNew,
   icoP2pTransaction,
   icoPromotion,
   icoProviders,
@@ -38,6 +28,7 @@ import {
   mainLogo
 } from './assets/images'
 import { ContentHeader } from './components/ContentHeader'
+import { GameList } from './components/GameList'
 import { ScrollArea } from './components/ScrollArea'
 import { Section } from './components/Section'
 
@@ -169,65 +160,7 @@ const App = () => {
             </Section.Header>
             <Section.Body>
               <ScrollArea>
-                <div className="game-list">
-                  <div className="game-item" style={{ backgroundImage: `url(${game100hpGaming})` }}>
-                    <span className="game-label">
-                      <img src={icoHot} />
-                    </span>
-                    <div className="game-name">
-                      <p className="name">100HP Gaming</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameVeliplay2})` }}>
-                    <span className="game-label">
-                      <img src={icoHot} />
-                    </span>
-                    <div className="game-name">
-                      <p className="name">Veliplay</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameEvolution})` }}>
-                    <span className="game-label">
-                      <img src={icoNew} />
-                    </span>
-                    <div className="game-name">
-                      <p className="name">Evolution</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameVeliplay2})` }}>
-                    <span className="game-label">
-                      <img src={icoNew} />
-                    </span>
-                    <div className="game-name">
-                      <p className="name">Veliplay</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameOnlyplay})` }}>
-                    <div className="game-name">
-                      <p className="name">Onlyplay</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameVeliplay3})` }}>
-                    <div className="game-name">
-                      <p className="name">Veliplay</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameVeliplay4})` }}>
-                    <div className="game-name">
-                      <p className="name">Veliplay</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameVeliplay5})` }}>
-                    <div className="game-name">
-                      <p className="name">Veliplay</p>
-                    </div>
-                  </div>
-                  <div className="game-item" style={{ backgroundImage: `url(${gameVeliplay6})` }}>
-                    <div className="game-name">
-                      <p className="name">Veliplay</p>
-                    </div>
-                  </div>
-                </div>
+                <GameList />
               </ScrollArea>
             </Section.Body>
           </Section>
