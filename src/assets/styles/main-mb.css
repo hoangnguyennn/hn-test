@@ -1,0 +1,212 @@
+@media screen and (max-width: 1440px) {
+  .header .container {
+    padding: 16px;
+  }
+
+  .menu-toggler-and-logo {
+    gap: 8px;
+  }
+
+  .menu-toggler {
+    width: 28px;
+  }
+
+  .search-button-and-menu {
+    display: none;
+  }
+
+  .header .right {
+    gap: 4px;
+  }
+
+  /* TODO: carousel */
+  .carousel {
+    display: none;
+  }
+
+  .content {
+    padding-block: 24px;
+  }
+
+  .category-list {
+    padding-inline: 10px;
+    padding-bottom: 24px;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  .category-item {
+    padding: 13px 18px;
+    gap: 7px;
+  }
+
+  .category-item.is-pc {
+    display: none;
+    visibility: hidden;
+  }
+
+  .category-item.is-mobile {
+    display: flex;
+    visibility: visible;
+  }
+
+  .category-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .section {
+    gap: 14px;
+  }
+
+  .section:has(+ .section) {
+    margin-bottom: 24px;
+  }
+
+  .section-header {
+    padding-inline: 16px;
+  }
+
+  .content-header-title {
+    font-size: 14px;
+    letter-spacing: 0.84px;
+    text-transform: uppercase;
+  }
+
+  .game-list {
+    padding-inline: 16px;
+  }
+
+  .game-item {
+    width: 120px;
+    height: 160px;
+  }
+
+  .game-name {
+    padding: 0 20px 6px;
+  }
+
+  .game-name .name {
+    font-size: 7px;
+    line-height: 7px;
+    letter-spacing: 0.98px;
+  }
+
+  .provider-list {
+    gap: 6px;
+    padding-inline: 16px;
+  }
+
+  .provider-item {
+    width: 120px;
+    height: 122px;
+  }
+
+  .footer {
+    padding: 40px 16px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .contact {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+  }
+
+  .contact .help-center {
+    margin-top: 80px;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a3157;
+    border-radius: 10px;
+    order: 2;
+    padding: 18px 24px;
+  }
+
+  .contact h3 {
+    margin-bottom: 0;
+  }
+
+  .contact button {
+    width: unset;
+    padding: 10px 12px;
+    margin-bottom: 0;
+  }
+
+  .contact .socials-label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 22px;
+  }
+
+  .contact .socials {
+    width: 300px;
+    padding-inline: 15px;
+  }
+
+  .footer-menu {
+    align-self: stretch;
+    padding: 13px 15px;
+    background-color: #1a3157;
+    border-radius: 10px;
+  }
+
+  .footer-menu-header {
+    color: #fff;
+  }
+
+  .footer-menu ul {
+    display: none;
+  }
+
+  .download-platforms {
+    align-self: stretch;
+  }
+
+  .download-platforms .macos {
+    display: none;
+  }
+
+  .download-platforms .mobiles {
+    gap: 8px;
+  }
+
+  .download-platforms .android,
+  .download-platforms .ios {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 54px;
+  }
+
+  .download-platforms .text-pc {
+    display: none;
+  }
+
+  .download-platforms .text-mb {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .download-platforms .text-mb p {
+    font-size: 15px;
+  }
+
+  .download-platforms .text-mb span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16.8px;
+    color: #90a2bd;
+    letter-spacing: -0.24px;
+  }
+}
