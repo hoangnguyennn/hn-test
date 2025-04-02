@@ -38,6 +38,15 @@ a {
   margin: 0 auto;
 }
 
+.button {
+  padding: 9px 12px;
+  font-size: 14px;
+  line-height: 15.4px;
+  letter-spacing: 0.42px;
+  border-radius: 10px;
+  border: none;
+}
+
 .header .container {
   display: flex;
   justify-content: space-between;
@@ -92,23 +101,11 @@ a {
 }
 
 .login-button {
-  padding: 9px 12px;
   background-color: #12294a;
-  font-size: 14px;
-  line-height: 15.4px;
-  letter-spacing: 0.42px;
-  border-radius: 10px;
-  border: none;
 }
 
 .registration-button {
-  padding: 9px 12px;
   background-color: #01af70;
-  font-size: 14px;
-  line-height: 15.4px;
-  letter-spacing: 0.42px;
-  border-radius: 10px;
-  border: none;
 }
 
 .carousel {

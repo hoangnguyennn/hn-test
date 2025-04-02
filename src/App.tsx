@@ -12,6 +12,7 @@ import {
   icoTwitter,
   mainLogo
 } from './assets/images'
+import { Button } from './components/Button'
 import { CategoryList } from './components/CategoryList'
 import { ContentHeader } from './components/ContentHeader'
 import { GameList } from './components/GameList'
@@ -42,8 +43,8 @@ const App = () => {
             </div>
           </div>
           <div className="right">
-            <button className="login-button">Login</button>
-            <button className="registration-button">Registration</button>
+            <Button className="login-button">Login</Button>
+            <Button className="registration-button">Registration</Button>
           </div>
         </div>
       </div>
