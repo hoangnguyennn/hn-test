@@ -3,22 +3,16 @@ import {
   carouselBg,
   icoAndroid,
   icoApple,
-  icoDiamond,
   icoFacebook,
-  icoGames,
-  icoHotMatch,
   icoInstagram,
   icoMenu,
-  icoP2pTransaction,
-  icoPromotion,
-  icoProviders,
   icoSearch,
   icoSeeAll,
   icoTelegram,
   icoTwitter,
-  icoVip,
   mainLogo
 } from './assets/images'
+import { CategoryList } from './components/CategoryList'
 import { ContentHeader } from './components/ContentHeader'
 import { GameList } from './components/GameList'
 import { ProviderList } from './components/ProviderList'
@@ -89,57 +83,7 @@ const App = () => {
 
       <div className="content">
         <div className="container">
-          <div className="category-list">
-            <div className="category-item is-pc">
-              <span className="category-icon">
-                <img src={icoDiamond} />
-              </span>
-              <span className="category-label">Diamond</span>
-            </div>
-            <div className="category-item is-pc">
-              <span className="category-icon">
-                <img src={icoVip} />
-              </span>
-              <span className="category-label">VIP</span>
-            </div>
-            <div className="category-item is-pc">
-              <span className="category-icon">
-                <img src={icoPromotion} />
-              </span>
-              <span className="category-label">Promotion</span>
-            </div>
-            <div className="category-item is-pc">
-              <span className="category-icon">
-                <img src={icoHotMatch} />
-              </span>
-              <span className="category-label">Hot Match</span>
-            </div>
-            <div className="category-item is-pc">
-              <span className="category-icon">
-                <img src={icoP2pTransaction} />
-              </span>
-              <span className="category-label">P2P Transaction</span>
-            </div>
-
-            <div className="category-item is-button is-mobile">
-              <span className="category-icon">
-                <img src={icoSearch} />
-              </span>
-              <span className="category-label">Search</span>
-            </div>
-            <div className="category-item is-button">
-              <span className="category-icon">
-                <img src={icoGames} />
-              </span>
-              <span className="category-label">Games</span>
-            </div>
-            <div className="category-item is-button">
-              <span className="category-icon">
-                <img src={icoProviders} />
-              </span>
-              <span className="category-label">Providers</span>
-            </div>
-          </div>
+          <CategoryList />
 
           <Section>
             <Section.Header>
