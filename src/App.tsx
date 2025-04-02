@@ -15,6 +15,7 @@ import {
 import { CategoryList } from './components/CategoryList'
 import { ContentHeader } from './components/ContentHeader'
 import { GameList } from './components/GameList'
+import { Menu } from './components/Menu'
 import { ProviderList } from './components/ProviderList'
 import { ScrollArea } from './components/ScrollArea'
 import { Section } from './components/Section'
@@ -37,28 +38,7 @@ const App = () => {
               <div className="search-button">
                 <img src={icoSearch} />
               </div>
-              <nav className="menu">
-                <ul>
-                  <li>
-                    <a href="#">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">Game</a>
-                  </li>
-                  <li>
-                    <a href="#">Infor</a>
-                  </li>
-                  <li>
-                    <a href="#">News</a>
-                  </li>
-                  <li>
-                    <a href="#">Promotions</a>
-                  </li>
-                  <li>
-                    <a href="#">VIP</a>
-                  </li>
-                </ul>
-              </nav>
+              <Menu />
             </div>
           </div>
           <div className="right">
