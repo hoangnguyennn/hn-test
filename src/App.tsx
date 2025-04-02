@@ -37,6 +37,7 @@ import {
   logoWazdan,
   mainLogo
 } from './assets/images'
+import { Section } from './components/Section'
 
 const App = () => {
   return (
@@ -154,8 +155,8 @@ const App = () => {
             </div>
           </div>
 
-          <section className="section">
-            <div className="section-header">
+          <Section>
+            <Section.Header>
               <div className="content-header">
                 <div className="content-header-title">Exclusive Games</div>
                 <div className="content-header-action">
@@ -163,9 +164,8 @@ const App = () => {
                   <img src={icoSeeAll} />
                 </div>
               </div>
-            </div>
-
-            <div className="section-body">
+            </Section.Header>
+            <Section.Body>
               <div className="scroll-area">
                 <div className="game-list">
                   <div className="game-item" style={{ backgroundImage: `url(${game100hpGaming})` }}>
@@ -227,11 +227,11 @@ const App = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </Section.Body>
+          </Section>
 
-          <section className="section">
-            <div className="section-header">
+          <Section>
+            <Section.Header>
               <div className="content-header">
                 <div className="content-header-title">All Providers</div>
                 <div className="content-header-action">
@@ -239,9 +239,8 @@ const App = () => {
                   <img src={icoSeeAll} />
                 </div>
               </div>
-            </div>
-
-            <div className="section-body">
+            </Section.Header>
+            <Section.Body>
               <div className="scroll-area">
                 <div className="provider-container">
                   <div className="provider-list">
@@ -327,8 +326,8 @@ const App = () => {
                   </div>
                 </div>
               </div>
-            </div>
-          </section>
+            </Section.Body>
+          </Section>
         </div>
       </div>
 
